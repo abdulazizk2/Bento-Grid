@@ -1,73 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Bento grid</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-  <link rel="stylesheet" href="output.css">
-</head>
-<body>
-  <div class="grid md:grid-cols-4 px-2">
-    <div class="bg-[#7651dd] rounded-xl w-full text-center"> 
-      <h1 class="text-3xl text-white font-bold">Social Media <span>10x</span>Faster with AI</h1>
-      
-      <img src="/assets/images/illustration-five-stars.webp" alt="5-star">
-      <p>Over 4,000 5-star reviews</p>
-    </div>
+    <title>Frontend Mentor | Bento grid</title>
 
-    <div class="bg-white">
-      <img src="/assets/images/illustration-multiple-platforms.webp" alt="multiple-platforms">  
-      Manage multiple accounts and platforms.
-    </div>
-    <div class="bg-[#ffcd6b]">
-      Maintain a consistent posting schedule.
-      <img src="/assets/images/illustration-consistent-schedule.webp" alt="consistent">
-    </div>
-    <div class="bg-[#ddd1fc]"> Schedule to social media.
-      Optimize post timings to publish content at the perfect time for your audience.
-      <img src="/assets/images/illustration-schedule-posts.webp" alt="schedule-posts">
-    </div>
- 
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <div>
+    <div class="grid md:grid-cols-4 gap-9 px-5 mt-4 space-y-5">
+      <div class="bg-[#7651dd] rounded-xl w-full text-center py-11 md:col-span-2">
+        <h1
+          class="text-4xl text-white font-medium pt-3 px-10"
+        >
+          Social Media
+          <span class="text-orange-300 font-medium break-words"
+            >10x</span
+          > Faster with AI
+        </h1>
 
-      <div class="bg-[#7651dd]"> 
-        <img src="/assets/images/illustration-grow-followers.webp" alt="grow-followers">
-        Grow followers with non-stop content.
+        <img
+          class="w-40 mx-auto mt-4"
+          src="/assets/images/illustration-five-stars.webp"
+          alt="5-star"
+        />
+        <p class="text-white">Over 4,000 5-star reviews</p>
+      </div>
+
+      <div class="bg-white px-6">
+        <img
+          src="/assets/images/illustration-multiple-platforms.webp"
+          class="w-11/12 mx-auto"
+          alt="multiple-platforms"
+        />
+        <p class="text-black font-bold text-2xl w-[80%]">
+          Manage multiple accounts and platforms.
+        </p>
+      </div>
+      <div class="bg-[#ffcd6b] items-start px-6 rounded-xl">
+        <p class="text-black font-bold text-2xl w-[80%] my-5">Maintain a consistent posting schedule.</p>
+        <img
+          src="/assets/images/illustration-consistent-schedule.webp"
+          class="w-[75%]"
+          alt="consistent"
+        />
+      </div>
+      <div class="bg-[#ddd1fc] md:col-start-4 md:row-start-1 md:row-span-2">
+        <p>
+          Schedule to social media. </p>
+        <img
+          src="/assets/images/illustration-schedule-posts.webp"
+          alt="schedule-posts"
+        />
+        <p>Optimize post timings to publish content at
+          the perfect time for your audience.
+        </p>
+      </div>
+
+      <div class="bg-[#7651dd]">
+        <img
+          src="/assets/images/illustration-grow-followers.webp"
+          alt="grow-followers"
+        />
+       <p>Grow followers with non-stop content.</p>
       </div>
       <div class="bg-white">
-        >56% faster audience growth
-        <img src="/assets/images/illustration-audience-growth.webp" alt="audience-growth">
+        <p>>56% faster audience growth</p>
+        <img
+          src="/assets/images/illustration-audience-growth.webp"
+          alt="audience-growth"
+        />
       </div>
-      <div class="bg-[#f9eee2]">
-      Create and schedule content quicker.
-      <img src="/assets/images/illustration-create-post.webp" alt="create-post">
+      <div class="bg-[#f9eee2] md:col-span-1 md:col-start-1 md:row-start-1">
+        <p>Create and schedule content <span>quicker.</span></p>
+        <img
+          src="/assets/images/illustration-create-post.webp"
+          alt="create-post"
+        />
       </div>
-      <div class="bg-[#ffcd6a]">
-        Write your content using AI.
-        <img src="/assets/images/illustration-ai-content.webp" alt="ai-content">
+      <div class="bg-[#ffcd6a] px-6 items-start rounded-xl md:row-span-2 md:col-start-1 md:row-start-3">
+       <p class="text-black font-bold text-2xl w-[80%] my-5">Write your content using AI.</p>
+        <img
+          src="/assets/images/illustration-ai-content.webp"
+          class="w-1/2 py-6"
+          alt="ai-content"
+        />
       </div>
-  
- </div>
-  
- 
-
-  
-  
-  
-
-  
-</div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    </div>
   </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>
